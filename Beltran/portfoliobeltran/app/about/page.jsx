@@ -1,0 +1,262 @@
+'use client';
+
+import React from 'react';
+import Link from 'next/link';
+
+export default function About() {
+  return (
+    <div className="min-h-screen bg-linear-to-br from-purple-600 via-purple-500 to-pink-500 p-6 lg:p-12">
+      {/* Main Container */}
+      <div className="max-w-7xl mx-auto">
+        
+        {/* Navigation Bar */}
+        <nav className="bg-white/30 backdrop-blur-sm rounded-full px-6 py-3 mb-12 border-2 border-white/30">
+          <div className="flex items-center justify-center gap-4">
+             <Link href="/" className="text-white px-6 py-2 rounded-full hover:bg-white/20 transition-colors font-medium">
+              Work
+            </Link>
+            <Link href="/about" className="text-white px-6 py-2 rounded-full hover:bg-white/20 transition-colors font-medium">
+              About
+            </Link>
+            <Link href="/projects" className="text-white px-6 py-2 rounded-full hover:bg-white/20 transition-colors font-medium">
+              Projects
+            </Link>
+            <Link href="contact" className="text-white px-6 py-2 rounded-full hover:bg-white/20 transition-colors font-medium">
+              Contact
+            </Link>
+          </div>
+        </nav>
+
+        {/* Hero Section - About Me */}
+        <section className="mb-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            
+            {/* Left - Image placeholder with star */}
+            <div className="relative">
+              <svg 
+                width="40" 
+                height="40" 
+                viewBox="0 0 24 24" 
+                fill="none" 
+                xmlns="http://www.w3.org/2000/svg"
+                className="absolute -top-6 -left-6 text-white animate-pulse z-10"
+              >
+                <path 
+                  d="M12 2L15 9L22 9L16 14L19 21L12 16L5 21L8 14L2 9L9 9L12 2Z" 
+                  fill="white"
+                  stroke="white"
+                  strokeWidth="1"
+                  strokeLinejoin="round"
+                />
+              </svg>
+              
+              <div className="w-full h-[400px] bg-purple-300/30 backdrop-blur-sm border-4 border-black rounded-3xl relative overflow-hidden">
+                <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                  <line x1="0" y1="0" x2="100" y2="100" stroke="black" strokeWidth="2" />
+                  <line x1="100" y1="0" x2="0" y2="100" stroke="black" strokeWidth="2" />
+                </svg>
+              </div>
+            </div>
+
+            {/* Right - About text */}
+            <div className="text-white space-y-6">
+              <h1 className="text-5xl lg:text-7xl font-bold mb-6">
+                I'm Beltrán.
+              </h1>
+              
+              <p className="text-xl lg:text-2xl font-semibold leading-relaxed">
+                I'm a 11th-grade student at ORT High School, working from Buenos Aires, Argentina.
+              </p>
+              
+              <p className="text-base lg:text-lg leading-relaxed opacity-90">
+                I really enjoy web development and experimenting with new components, libraries, and technologies to ensure that what I'm doing is innovative and visually appealing. The projects I worked on were both the best experiences I've had in high school today, and also what I enjoyed about front-end design. Thinking of ways to make the design better.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Second Section - Images */}
+        <section className="mb-20">
+          <div className="flex flex-col lg:flex-row gap-6 items-center justify-center mb-8">
+            {/* Left Image */}
+            <div className="relative">
+              <div className="w-[280px] h-[200px] bg-purple-300/30 backdrop-blur-sm border-4 border-black rounded-3xl overflow-hidden">
+                <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                  <line x1="0" y1="0" x2="100" y2="100" stroke="black" strokeWidth="2" />
+                  <line x1="100" y1="0" x2="0" y2="100" stroke="black" strokeWidth="2" />
+                </svg>
+              </div>
+            </div>
+
+            {/* Center Buttons */}
+            <div className="flex flex-col gap-3">
+              <button className="bg-purple-700/40 backdrop-blur-sm text-white px-8 py-3 rounded-full border-2 border-white/30 hover:border-white/50 transition-all font-medium">
+                Work
+              </button>
+              <button className="bg-purple-700/40 backdrop-blur-sm text-white px-8 py-3 rounded-full border-2 border-white/30 hover:border-white/50 transition-all font-medium">
+                About Me
+              </button>
+            </div>
+
+            {/* Right Image */}
+            <div className="relative">
+              <svg 
+                width="35" 
+                height="35" 
+                viewBox="0 0 24 24" 
+                fill="none" 
+                xmlns="http://www.w3.org/2000/svg"
+                className="absolute -top-4 -right-4 text-white animate-pulse z-10"
+              >
+                <path 
+                  d="M12 2L15 9L22 9L16 14L19 21L12 16L5 21L8 14L2 9L9 9L12 2Z" 
+                  fill="white"
+                  stroke="white"
+                  strokeWidth="1"
+                  strokeLinejoin="round"
+                />
+              </svg>
+              
+              <div className="w-[280px] h-[200px] bg-purple-300/30 backdrop-blur-sm border-4 border-black rounded-3xl overflow-hidden">
+                <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                  <line x1="0" y1="0" x2="100" y2="100" stroke="black" strokeWidth="2" />
+                  <line x1="100" y1="0" x2="0" y2="100" stroke="black" strokeWidth="2" />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          {/* Description text */}
+          <div className="text-center max-w-3xl mx-auto">
+            <p className="text-white text-lg lg:text-xl leading-relaxed">
+              I created these projects/pages developed for my first school project. I really enjoyed that experience, and then I discovered the possibility of writing code then to create web experiences in my liking and in my own style. I realized that this was for me.
+            </p>
+          </div>
+        </section>
+
+        {/* Third Section - Front-end Development */}
+        <section className="mb-20">
+          <div className="text-center mb-12">
+            <p className="text-white text-2xl lg:text-3xl font-bold leading-relaxed max-w-4xl mx-auto">
+              During my last two years of high school, I was in charge of the front-end development for the projects I worked on.
+            </p>
+          </div>
+
+          {/* 4 Images Grid */}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* Image 1 */}
+            <div className="relative">
+              <svg 
+                width="35" 
+                height="35" 
+                viewBox="0 0 24 24" 
+                fill="none" 
+                xmlns="http://www.w3.org/2000/svg"
+                className="absolute -top-4 -left-4 text-white animate-pulse z-10"
+              >
+                <path 
+                  d="M12 2L15 9L22 9L16 14L19 21L12 16L5 21L8 14L2 9L9 9L12 2Z" 
+                  fill="white"
+                  stroke="white"
+                  strokeWidth="1"
+                  strokeLinejoin="round"
+                />
+              </svg>
+              
+              <div className="w-full h-[280px] bg-purple-300/30 backdrop-blur-sm border-4 border-black rounded-3xl overflow-hidden">
+                <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                  <line x1="0" y1="0" x2="100" y2="100" stroke="black" strokeWidth="2" />
+                  <line x1="100" y1="0" x2="0" y2="100" stroke="black" strokeWidth="2" />
+                </svg>
+              </div>
+            </div>
+
+            {/* Image 2 */}
+            <div className="relative">
+              <svg 
+                width="35" 
+                height="35" 
+                viewBox="0 0 24 24" 
+                fill="none" 
+                xmlns="http://www.w3.org/2000/svg"
+                className="absolute -top-4 -left-4 text-white animate-pulse z-10"
+                style={{ animationDelay: '0.2s' }}
+              >
+                <path 
+                  d="M12 2L15 9L22 9L16 14L19 21L12 16L5 21L8 14L2 9L9 9L12 2Z" 
+                  fill="white"
+                  stroke="white"
+                  strokeWidth="1"
+                  strokeLinejoin="round"
+                />
+              </svg>
+              
+              <div className="w-full h-[280px] bg-purple-300/30 backdrop-blur-sm border-4 border-black rounded-3xl overflow-hidden">
+                <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                  <line x1="0" y1="0" x2="100" y2="100" stroke="black" strokeWidth="2" />
+                  <line x1="100" y1="0" x2="0" y2="100" stroke="black" strokeWidth="2" />
+                </svg>
+              </div>
+            </div>
+
+            {/* Image 3 */}
+            <div className="relative">
+              <svg 
+                width="35" 
+                height="35" 
+                viewBox="0 0 24 24" 
+                fill="none" 
+                xmlns="http://www.w3.org/2000/svg"
+                className="absolute -top-4 -left-4 text-white animate-pulse z-10"
+                style={{ animationDelay: '0.4s' }}
+              >
+                <path 
+                  d="M12 2L15 9L22 9L16 14L19 21L12 16L5 21L8 14L2 9L9 9L12 2Z" 
+                  fill="white"
+                  stroke="white"
+                  strokeWidth="1"
+                  strokeLinejoin="round"
+                />
+              </svg>
+              
+              <div className="w-full h-[280px] bg-purple-300/30 backdrop-blur-sm border-4 border-black rounded-3xl overflow-hidden">
+                <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                  <line x1="0" y1="0" x2="100" y2="100" stroke="black" strokeWidth="2" />
+                  <line x1="100" y1="0" x2="0" y2="100" stroke="black" strokeWidth="2" />
+                </svg>
+              </div>
+            </div>
+
+            {/* Image 4 */}
+            <div className="relative">
+              <svg 
+                width="35" 
+                height="35" 
+                viewBox="0 0 24 24" 
+                fill="none" 
+                xmlns="http://www.w3.org/2000/svg"
+                className="absolute -top-4 -left-4 text-white animate-pulse z-10"
+                style={{ animationDelay: '0.6s' }}
+              >
+                <path 
+                  d="M12 2L15 9L22 9L16 14L19 21L12 16L5 21L8 14L2 9L9 9L12 2Z" 
+                  fill="white"
+                  stroke="white"
+                  strokeWidth="1"
+                  strokeLinejoin="round"
+                />
+              </svg>
+              
+              <div className="w-full h-[280px] bg-purple-300/30 backdrop-blur-sm border-4 border-black rounded-3xl overflow-hidden">
+                <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                  <line x1="0" y1="0" x2="100" y2="100" stroke="black" strokeWidth="2" />
+                  <line x1="100" y1="0" x2="0" y2="100" stroke="black" strokeWidth="2" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  );
+}
