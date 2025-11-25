@@ -186,12 +186,13 @@ export default function Home() {
             <div className="bg-white rounded-3xl p-8 lg:p-10 shadow-2xl mb-8">
               <div className="flex flex-col lg:flex-row items-start gap-8">
                 {/* Project Image */}
-                <div className="w-[200px] h-[200px] lg:w-[220px] lg:h-[220px] bg-white border-4 border-black shrink-0">
+                <div className="w-[200px] h-[200px] lg:w-[220px] lg:h-[220px] bg-white shrink-0">
                   <div className="w-full h-full relative">
-                    <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-                      <line x1="0" y1="0" x2="100" y2="100" stroke="black" strokeWidth="2" />
-                      <line x1="100" y1="0" x2="0" y2="100" stroke="black" strokeWidth="2" />
-                    </svg>
+                  <div className="flex items-center justify-center w-full lg:w-48 h-48 bg-purple-300/30 backdrop-blur-sm border-4 border-black rounded-2xl shrink-0 overflow-hidden">
+                <img className="w-[48vw] h-[15vh]" preserveAspectRatio="none" src='/dihylogo.png'>
+                
+                </img>
+              </div>
                   </div>
                 </div>
 

@@ -102,53 +102,51 @@ export default function Contact() {
               </a>
             </div>
           </div>
+{/* Right Side - Image with stars */}
+<div className="relative flex justify-center lg:justify-end">
 
-          {/* Right Side - Image with stars */}
-          <div className="relative flex justify-center lg:justify-end">
-            {/* Decorative Star - Top Right */}
-            <svg 
-              width="50" 
-              height="50" 
-              viewBox="0 0 24 24" 
-              fill="none" 
-              xmlns="http://www.w3.org/2000/svg"
-              className="absolute -top-6 -right-6 text-white animate-pulse z-10"
-            >
-              <path 
-                d="M12 2L15 9L22 9L16 14L19 21L12 16L5 21L8 14L2 9L9 9L12 2Z" 
-                fill="white"
-                stroke="white"
-                strokeWidth="1"
-                strokeLinejoin="round"
-              />
-            </svg>
+  {/* Decorative Star - Top Right */}
+  <svg 
+    width="50" 
+    height="50" 
+    viewBox="0 0 24 24"
+    className="absolute -top-6 -right-6 text-white animate-pulse z-10"
+  >
+    <path 
+      d="M12 2L15 9L22 9L16 14L19 21L12 16L5 21L8 14L2 9L9 9L12 2Z" 
+      fill="white"
+      stroke="white"
+      strokeWidth="1"
+      strokeLinejoin="round"
+    />
+  </svg>
 
-            {/* Decorative Star - Bottom Left */}
-            <svg 
-              width="50" 
-              height="50" 
-              viewBox="0 0 24 24" 
-              fill="none" 
-              xmlns="http://www.w3.org/2000/svg"
-              className="absolute -bottom-6 -left-6 text-white animate-pulse z-10"
-              style={{ animationDelay: '0.5s' }}
-            >
-              <path 
-                d="M12 2L15 9L22 9L16 14L19 21L12 16L5 21L8 14L2 9L9 9L12 2Z" 
-                fill="white"
-                stroke="white"
-                strokeWidth="1"
-                strokeLinejoin="round"
-              />
-            </svg>
+  {/* Decorative Star - Bottom Left */}
+  <svg 
+    width="50" 
+    height="50" 
+    viewBox="0 0 24 24" 
+    className="absolute -bottom-6 -left-6 text-white animate-pulse z-10"
+    style={{ animationDelay: '0.5s' }}
+  >
+    <path 
+      d="M12 2L15 9L22 9L16 14L19 21L12 16L5 21L8 14L2 9L9 9L12 2Z" 
+      fill="white"
+      stroke="white"
+      strokeWidth="1"
+      strokeLinejoin="round"
+    />
+  </svg>
 
-            {/* Image placeholder */}
-            <div className="w-full max-w-md h-[400px] bg-purple-300/30 backdrop-blur-sm border-4 border-black rounded-3xl overflow-hidden relative">
-              <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-                <line x1="0" y1="0" x2="100" y2="100" stroke="black" strokeWidth="2" />
-                <line x1="100" y1="0" x2="0" y2="100" stroke="black" strokeWidth="2" />
-              </svg>
-            </div>
+  {/* Image container */}
+  <div className="w-full max-w-md bg-purple-300/30 backdrop-blur-sm rounded-3xl border-4 border-black overflow-hidden flex items-center justify-center h-[380px]">
+    <img 
+      src="/bel.png"
+      alt="Beltran"
+      className="w-full h-full object-cover"
+    />
+  </div>
+
           </div>
         </div>
       </div>

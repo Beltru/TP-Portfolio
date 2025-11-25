@@ -78,11 +78,9 @@ export default function Projects() {
 
             <div className="flex flex-col lg:flex-row gap-8 items-start">
               {/* Project Image */}
-              <div className="w-full lg:w-48 h-48 bg-purple-300/30 backdrop-blur-sm border-4 border-black rounded-2xl shrink-0 overflow-hidden">
-                <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-                  <line x1="0" y1="0" x2="100" y2="100" stroke="black" strokeWidth="2" />
-                  <line x1="100" y1="0" x2="0" y2="100" stroke="black" strokeWidth="2" />
-                </svg>
+              <div className="flex items-center justify-center w-full lg:w-48 h-48 bg-purple-300/30 backdrop-blur-sm border-4 border-black rounded-2xl shrink-0 overflow-hidden">
+                <img className="w-[48vw] h-[25vh]" preserveAspectRatio="none" src='/mbnlogo.png'>
+                </img>
               </div>
 
               {/* Project Info */}
@@ -126,11 +124,10 @@ export default function Projects() {
 
             <div className="flex flex-col lg:flex-row gap-8 items-start">
               {/* Project Image */}
-              <div className="w-full lg:w-48 h-48 bg-purple-300/30 backdrop-blur-sm border-4 border-black rounded-2xl shrink-0 overflow-hidden">
-                <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-                  <line x1="0" y1="0" x2="100" y2="100" stroke="black" strokeWidth="2" />
-                  <line x1="100" y1="0" x2="0" y2="100" stroke="black" strokeWidth="2" />
-                </svg>
+              <div className="flex items-center justify-center w-full lg:w-48 h-48 bg-purple-300/30 backdrop-blur-sm border-4 border-black rounded-2xl shrink-0 overflow-hidden">
+                <img className="w-[48vw] h-[15vh]" preserveAspectRatio="none" src='/dihylogo.png'>
+                
+                </img>
               </div>
 
               {/* Project Info */}
@@ -178,23 +175,17 @@ export default function Projects() {
 
             {/* Project Images Grid */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="w-full h-64 bg-purple-300/30 backdrop-blur-sm border-4 border-black rounded-2xl overflow-hidden">
-                <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-                  <line x1="0" y1="0" x2="100" y2="100" stroke="black" strokeWidth="2" />
-                  <line x1="100" y1="0" x2="0" y2="100" stroke="black" strokeWidth="2" />
-                </svg>
+            <div className="flex items-center justify-center w-full lg:w-60 h-60 bg-purple-300/30 backdrop-blur-sm border-4 border-black rounded-2xl shrink-0 overflow-hidden">
+                <img className="w-[35vw] h-[35vh]" preserveAspectRatio="none" src='/mbncharts.png'>
+                </img>
               </div>
-              <div className="w-full h-64 bg-purple-300/30 backdrop-blur-sm border-4 border-black rounded-2xl overflow-hidden">
-                <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-                  <line x1="0" y1="0" x2="100" y2="100" stroke="black" strokeWidth="2" />
-                  <line x1="100" y1="0" x2="0" y2="100" stroke="black" strokeWidth="2" />
-                </svg>
+              <div className="flex items-center justify-center w-full lg:w-60 h-60 bg-purple-300/30 backdrop-blur-sm border-4 border-black rounded-2xl shrink-0 overflow-hidden">
+                <img className="w-[75vw] h-[35vh]" preserveAspectRatio="none" src='/Rectangle.png'>
+                </img>
               </div>
-              <div className="w-full h-64 bg-purple-300/30 backdrop-blur-sm border-4 border-black rounded-2xl overflow-hidden">
-                <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-                  <line x1="0" y1="0" x2="100" y2="100" stroke="black" strokeWidth="2" />
-                  <line x1="100" y1="0" x2="0" y2="100" stroke="black" strokeWidth="2" />
-                </svg>
+              <div className="flex items-center justify-center w-full lg:w-60 h-60 bg-purple-300/30 backdrop-blur-sm border-4 border-black rounded-2xl shrink-0 overflow-hidden">
+                <img className="w-[20vw] h-[30vh]" preserveAspectRatio="none" src='/image.png'>
+                </img>
               </div>
             </div>
 
@@ -241,23 +232,17 @@ export default function Projects() {
 
             {/* Project Images Grid */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="w-full h-64 bg-purple-300/30 backdrop-blur-sm border-4 border-black rounded-2xl overflow-hidden">
-                <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-                  <line x1="0" y1="0" x2="100" y2="100" stroke="black" strokeWidth="2" />
-                  <line x1="100" y1="0" x2="0" y2="100" stroke="black" strokeWidth="2" />
-                </svg>
+            <div className="flex items-center justify-center w-full lg:w-60 h-60 bg-purple-300/30 backdrop-blur-sm border-4 border-black rounded-2xl shrink-0 overflow-hidden">
+                <img className="w-[50vw] h-[30vh]" preserveAspectRatio="none" src='/homedihy.png'>
+                </img>
               </div>
-              <div className="w-full h-64 bg-purple-300/30 backdrop-blur-sm border-4 border-black rounded-2xl overflow-hidden">
-                <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-                  <line x1="0" y1="0" x2="100" y2="100" stroke="black" strokeWidth="2" />
-                  <line x1="100" y1="0" x2="0" y2="100" stroke="black" strokeWidth="2" />
-                </svg>
+              <div className="flex items-center justify-center w-full lg:w-60 h-60 bg-purple-300/30 backdrop-blur-sm border-4 border-black rounded-2xl shrink-0 overflow-hidden">
+                <img className="w-[55vw] h-[25vh]" preserveAspectRatio="none" src='/chartsdihy.png'>
+                </img>
               </div>
-              <div className="w-full h-64 bg-purple-300/30 backdrop-blur-sm border-4 border-black rounded-2xl overflow-hidden">
-                <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-                  <line x1="0" y1="0" x2="100" y2="100" stroke="black" strokeWidth="2" />
-                  <line x1="100" y1="0" x2="0" y2="100" stroke="black" strokeWidth="2" />
-                </svg>
+              <div className="flex items-center justify-center w-full lg:w-60 h-60 bg-purple-300/30 backdrop-blur-sm border-4 border-black rounded-2xl shrink-0 overflow-hidden">
+                <img className="w-[50vw] h-[30vh]" preserveAspectRatio="none" src='/calendario.png'>
+                </img>
               </div>
             </div>
 

@@ -50,12 +50,14 @@ export default function About() {
                 />
               </svg>
               
-              <div className="w-full h-[400px] bg-purple-300/30 backdrop-blur-sm border-4 border-black rounded-3xl relative overflow-hidden">
-                <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-                  <line x1="0" y1="0" x2="100" y2="100" stroke="black" strokeWidth="2" />
-                  <line x1="100" y1="0" x2="0" y2="100" stroke="black" strokeWidth="2" />
-                </svg>
+              <div className="w-full h-[400px] bg-purple-300/30 backdrop-blur-sm border-4 border-black rounded-3xl relative overflow-hidden flex items-center justify-center">
+                <img 
+                  src="/bel.png"
+                  alt="Beltran"
+                  className="w-full h-full object-cover"
+                />
               </div>
+
             </div>
 
             {/* Right - About text */}
@@ -77,55 +79,6 @@ export default function About() {
 
         {/* Second Section - Images */}
         <section className="mb-20">
-          <div className="flex flex-col lg:flex-row gap-6 items-center justify-center mb-8">
-            {/* Left Image */}
-            <div className="relative">
-              <div className="w-[280px] h-[200px] bg-purple-300/30 backdrop-blur-sm border-4 border-black rounded-3xl overflow-hidden">
-                <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-                  <line x1="0" y1="0" x2="100" y2="100" stroke="black" strokeWidth="2" />
-                  <line x1="100" y1="0" x2="0" y2="100" stroke="black" strokeWidth="2" />
-                </svg>
-              </div>
-            </div>
-
-            {/* Center Buttons */}
-            <div className="flex flex-col gap-3">
-              <button className="bg-purple-700/40 backdrop-blur-sm text-white px-8 py-3 rounded-full border-2 border-white/30 hover:border-white/50 transition-all font-medium">
-                Work
-              </button>
-              <button className="bg-purple-700/40 backdrop-blur-sm text-white px-8 py-3 rounded-full border-2 border-white/30 hover:border-white/50 transition-all font-medium">
-                About Me
-              </button>
-            </div>
-
-            {/* Right Image */}
-            <div className="relative">
-              <svg 
-                width="35" 
-                height="35" 
-                viewBox="0 0 24 24" 
-                fill="none" 
-                xmlns="http://www.w3.org/2000/svg"
-                className="absolute -top-4 -right-4 text-white animate-pulse z-10"
-              >
-                <path 
-                  d="M12 2L15 9L22 9L16 14L19 21L12 16L5 21L8 14L2 9L9 9L12 2Z" 
-                  fill="white"
-                  stroke="white"
-                  strokeWidth="1"
-                  strokeLinejoin="round"
-                />
-              </svg>
-              
-              <div className="w-[280px] h-[200px] bg-purple-300/30 backdrop-blur-sm border-4 border-black rounded-3xl overflow-hidden">
-                <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-                  <line x1="0" y1="0" x2="100" y2="100" stroke="black" strokeWidth="2" />
-                  <line x1="100" y1="0" x2="0" y2="100" stroke="black" strokeWidth="2" />
-                </svg>
-              </div>
-            </div>
-          </div>
-
           {/* Description text */}
           <div className="text-center max-w-3xl mx-auto">
             <p className="text-white text-lg lg:text-xl leading-relaxed">
@@ -143,118 +96,16 @@ export default function About() {
           </div>
 
           {/* 4 Images Grid */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* Image 1 */}
-            <div className="relative">
-              <svg 
-                width="35" 
-                height="35" 
-                viewBox="0 0 24 24" 
-                fill="none" 
-                xmlns="http://www.w3.org/2000/svg"
-                className="absolute -top-4 -left-4 text-white animate-pulse z-10"
-              >
-                <path 
-                  d="M12 2L15 9L22 9L16 14L19 21L12 16L5 21L8 14L2 9L9 9L12 2Z" 
-                  fill="white"
-                  stroke="white"
-                  strokeWidth="1"
-                  strokeLinejoin="round"
-                />
-              </svg>
-              
-              <div className="w-full h-[280px] bg-purple-300/30 backdrop-blur-sm border-4 border-black rounded-3xl overflow-hidden">
-                <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-                  <line x1="0" y1="0" x2="100" y2="100" stroke="black" strokeWidth="2" />
-                  <line x1="100" y1="0" x2="0" y2="100" stroke="black" strokeWidth="2" />
-                </svg>
+          <div className="flex gap-6 items-center justify-center">
+              <div className="flex items-center justify-center w-full lg:w-60 h-60 bg-purple-300/30 backdrop-blur-sm border-4 border-black rounded-2xl shrink-0 overflow-hidden">
+                <img className="w-[50vw] h-[20vh]" preserveAspectRatio="none" src='/dihylogo.png'>
+                </img>
+              </div>
+              <div className="flex items-center justify-center w-full lg:w-60 h-60 bg-purple-300/30 backdrop-blur-sm border-4 border-black rounded-2xl shrink-0 overflow-hidden">
+                <img className="w-[20vw] h-[30vh]" preserveAspectRatio="none" src='/mbnlogo.png'>
+                </img>
               </div>
             </div>
-
-            {/* Image 2 */}
-            <div className="relative">
-              <svg 
-                width="35" 
-                height="35" 
-                viewBox="0 0 24 24" 
-                fill="none" 
-                xmlns="http://www.w3.org/2000/svg"
-                className="absolute -top-4 -left-4 text-white animate-pulse z-10"
-                style={{ animationDelay: '0.2s' }}
-              >
-                <path 
-                  d="M12 2L15 9L22 9L16 14L19 21L12 16L5 21L8 14L2 9L9 9L12 2Z" 
-                  fill="white"
-                  stroke="white"
-                  strokeWidth="1"
-                  strokeLinejoin="round"
-                />
-              </svg>
-              
-              <div className="w-full h-[280px] bg-purple-300/30 backdrop-blur-sm border-4 border-black rounded-3xl overflow-hidden">
-                <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-                  <line x1="0" y1="0" x2="100" y2="100" stroke="black" strokeWidth="2" />
-                  <line x1="100" y1="0" x2="0" y2="100" stroke="black" strokeWidth="2" />
-                </svg>
-              </div>
-            </div>
-
-            {/* Image 3 */}
-            <div className="relative">
-              <svg 
-                width="35" 
-                height="35" 
-                viewBox="0 0 24 24" 
-                fill="none" 
-                xmlns="http://www.w3.org/2000/svg"
-                className="absolute -top-4 -left-4 text-white animate-pulse z-10"
-                style={{ animationDelay: '0.4s' }}
-              >
-                <path 
-                  d="M12 2L15 9L22 9L16 14L19 21L12 16L5 21L8 14L2 9L9 9L12 2Z" 
-                  fill="white"
-                  stroke="white"
-                  strokeWidth="1"
-                  strokeLinejoin="round"
-                />
-              </svg>
-              
-              <div className="w-full h-[280px] bg-purple-300/30 backdrop-blur-sm border-4 border-black rounded-3xl overflow-hidden">
-                <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-                  <line x1="0" y1="0" x2="100" y2="100" stroke="black" strokeWidth="2" />
-                  <line x1="100" y1="0" x2="0" y2="100" stroke="black" strokeWidth="2" />
-                </svg>
-              </div>
-            </div>
-
-            {/* Image 4 */}
-            <div className="relative">
-              <svg 
-                width="35" 
-                height="35" 
-                viewBox="0 0 24 24" 
-                fill="none" 
-                xmlns="http://www.w3.org/2000/svg"
-                className="absolute -top-4 -left-4 text-white animate-pulse z-10"
-                style={{ animationDelay: '0.6s' }}
-              >
-                <path 
-                  d="M12 2L15 9L22 9L16 14L19 21L12 16L5 21L8 14L2 9L9 9L12 2Z" 
-                  fill="white"
-                  stroke="white"
-                  strokeWidth="1"
-                  strokeLinejoin="round"
-                />
-              </svg>
-              
-              <div className="w-full h-[280px] bg-purple-300/30 backdrop-blur-sm border-4 border-black rounded-3xl overflow-hidden">
-                <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-                  <line x1="0" y1="0" x2="100" y2="100" stroke="black" strokeWidth="2" />
-                  <line x1="100" y1="0" x2="0" y2="100" stroke="black" strokeWidth="2" />
-                </svg>
-              </div>
-            </div>
-          </div>
         </section>
       </div>
     </div>
