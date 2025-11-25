@@ -23,15 +23,19 @@ export default function Home() {
             
             {/* Left side - Image placeholder */}
             <div className="relative">
-              <div className="w-[280px] h-[420px] lg:w-[350px] lg:h-[500px] bg-white border-4 border-black relative">
-                <div className="absolute inset-0">
-                  <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-                    <line x1="0" y1="0" x2="100" y2="100" stroke="black" strokeWidth="1" />
-                    <line x1="100" y1="0" x2="0" y2="100" stroke="black" strokeWidth="1" />
-                  </svg>
-                </div>
-              </div>
-            </div>
+  <div className="w-[280px] h-[420px] lg:w-[350px] lg:h-[500px] bg-white border-4 border-black rounded-3xl overflow-hidden flex items-center justify-center p-4">
+    
+    <div className="w-full h-full bg-purple-300/30 backdrop-blur-sm border-4 border-black rounded-2xl overflow-hidden flex items-center justify-center">
+      <img 
+        src="/ailu.png"
+        alt="Ailu"
+        className="w-full h-full object-cover"
+      />
+    </div>
+
+  </div>
+</div>
+
           </section>
           
           {/* Stacked faded text on right */}
@@ -64,13 +68,6 @@ export default function Home() {
                 <span className="font-bold">LI:</span> debarbara.ailen
               </p>
             </div>
-          </div>
-
-          {/* Scroll Down Button */}
-          <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2">
-            <button className="bg-[#5B7FA8] text-white px-8 py-4 rounded-full font-bold text-xl hover:bg-[#486F9A] transition-colors shadow-lg">
-              Scroll<br />Down
-            </button>
           </div>
         </section>
 
@@ -210,13 +207,11 @@ export default function Home() {
             <div className="bg-white rounded-3xl p-8 lg:p-10 shadow-2xl">
               <div className="flex flex-col lg:flex-row items-start gap-8">
                 {/* Project Image */}
-                <div className="w-[200px] h-[200px] lg:w-[220px] lg:h-[220px] bg-white border-4 border-black shrink-0">
-                  <div className="w-full h-full relative">
-                    <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-                      <line x1="0" y1="0" x2="100" y2="100" stroke="black" strokeWidth="2" />
-                      <line x1="100" y1="0" x2="0" y2="100" stroke="black" strokeWidth="2" />
-                    </svg>
-                  </div>
+                <div className="w-[200px] h-[200px] lg:w-[220px] lg:h-[220px] bg-white shrink-0">
+                <div className="flex items-center justify-center w-full lg:w-60 h-60 bg-purple-300/30 backdrop-blur-sm border-4 border-black rounded-2xl shrink-0 overflow-hidden">
+                <img className="w-[35vw] h-[35vh]" preserveAspectRatio="none" src='/logo.png'>
+                </img>
+              </div>
                 </div>
 
                 {/* Project Info */}
