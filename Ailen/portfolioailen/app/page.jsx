@@ -80,75 +80,40 @@ export default function Home() {
           <div className="absolute bottom-0 left-0 w-full h-[75%] bg-[#E1E7F3]"></div>
           
           {/* Content */}
-          <div className="relative z-10 flex flex-row w-full max-w-7xl items-center justify-between px-12 lg:px-24 gap-12">
+          <div className="relative z-10 flex flex-row w-full max-w-7xl items-center justify-between mt-30 px-12 lg:px-24 gap-12">
             {/* Left side - Text */}
             <div className="flex flex-col max-w-xl">
               <h1 className="text-6xl lg:text-7xl font-bold text-black mb-8 leading-tight">
                 Hello,<br />I'm Ailen !
               </h1>
               <p className="text-black text-lg lg:text-xl leading-relaxed mb-6">
-                I am a self-taught Graphic Designer based in Argentina with extensive designing and programming experience. I am currently in my last high school year and working on another project.
-              </p>
+                I am a self-taught Graphic Designer based in Argentina with extensive designing and programming experience. I am currently in my last high school year and working on another project.</p>
             </div>
-
+              <a 
+              href="https://linkedin.com/in/debarbara-ailen" 
+               target="_blank"
+              rel="noopener noreferrer"
+               className="bg-purple-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-purple-600 transition-colors shadow-lg inline-block text-center max-w-xs"
+             >
+               LinkedIn Link
+              </a>
             {/* Right side - Image placeholder with date */}
             <div className="relative">
-              <div className="w-[350px] h-[450px] lg:w-[420px] lg:h-[520px] bg-white border-4 border-black relative">
+              <div className="w-[350px] h-[450px] lg:w-[420px] lg:h-[520px] relative">
                 <div className="absolute inset-0">
-                  <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-                    <line x1="0" y1="0" x2="100" y2="100" stroke="black" strokeWidth="2" />
-                    <line x1="100" y1="0" x2="0" y2="100" stroke="black" strokeWidth="2" />
-                  </svg>
+                  <img src="/ailen.jpg"/>
                 </div>
               </div>
-              
+              <div className="absolute top-1 -right-1 bg-purple-500 text-white px-6 py-3 rounded-full font-bold text-lg shadow-lg z-20">
+                  Argentina              
+              </div>
               {/* Date badge */}
               <div className="absolute top-1/3 -left-8 bg-purple-500 text-white px-6 py-3 rounded-full font-bold text-lg shadow-lg z-20">
                 3rd July 2007
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Third Section - Contact & Image */}
-        <section className="w-full min-h-screen bg-[#E1E7F3] relative">
-          <div className="container mx-auto px-6 lg:px-12 py-20">
-            <div className="flex flex-col lg:flex-row items-start justify-between gap-12">
-              {/* Left side - Text and LinkedIn button */}
-              <div className="flex flex-col max-w-md">
-                <p className="text-black text-xl lg:text-2xl leading-relaxed mb-8">
-                  My last high school year and working on another project.
-                </p>
-                <a 
-                  href="https://linkedin.com/in/debarbara-ailen" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-purple-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-purple-600 transition-colors shadow-lg inline-block text-center max-w-xs"
-                >
-                  LinkedIn Link
-                </a>
-              </div>
-
-              {/* Right side - Image with badges */}
-              <div className="relative">
-                <div className="w-[300px] h-[350px] lg:w-[420px] lg:h-[450px] bg-white border-4 border-black relative">
-                  <div className="absolute inset-0">
-                    <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-                      <line x1="0" y1="0" x2="100" y2="100" stroke="black" strokeWidth="2" />
-                      <line x1="100" y1="0" x2="0" y2="100" stroke="black" strokeWidth="2" />
-                    </svg>
-                  </div>
-                </div>
-                
-                {/* Argentinian badge */}
-                <div className="absolute top-8 -right-4 bg-purple-500 text-white px-6 py-3 rounded-full font-bold text-lg shadow-lg z-20">
-                  Argentinian
-                </div>
-              </div>
-            </div>
-
+            </div> 
             {/* Contact Card - Floating */}
-            <div className="absolute right-12 lg:right-24 top-1/2 transform -translate-y-1/2 bg-[#5B7FA8] text-white p-8 rounded-2xl shadow-2xl z-30 min-w-[320px]">
+            <div className="absolute right-12 lg:right-34 top-7/6 transform -translate-y-1/2 bg-[#5B7FA8] text-white p-8 rounded-2xl shadow-2xl z-30 min-w-[320px]">
               <div className="flex items-center gap-3 mb-6">
                 <h2 className="text-4xl font-bold">Contact</h2>
                 <svg 
@@ -171,6 +136,23 @@ export default function Home() {
               <p className="text-lg mb-2">debarbara.ailen@gmail.com</p>
               <p className="text-lg">+54 11 6886-6341</p>
             </div>
+          </div>
+        </section>
+
+        {/* Third Section - Contact & Image */}
+        <section className="w-full min-h-screen bg-[#E1E7F3] relative">
+          <div className="container mx-auto px-6 lg:px-12 py-20">
+            <div className="flex flex-col lg:flex-row items-start justify-between gap-12">
+              {/* Left side - Text and LinkedIn button */}
+              <div className="flex flex-col max-w-md">
+               
+              </div>
+
+              {/* Right side - Image with badges */}
+              
+            </div>
+
+           
           </div>
         </section>
 
